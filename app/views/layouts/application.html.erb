@@ -3,17 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>TODO</title>
+    <title>Bobato Ship Models | Ship Model Maker In Mauritius</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- ** Plugins Needed for the Project ** -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
     <%= yield %>
+    <%= render 'shared/footer' %>
 
     <%= javascript_pack_tag 'application' %>
+
+ 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
