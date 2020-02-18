@@ -3,14 +3,12 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10">
-         <h2 class="cd-headline clip is-full-width mb-4 ">
-          Bobato Ship Models <br>
-                    <span class="cd-words-wrapper text-color">
-                        <b class="is-visible">Handmade Ship Models</b> <br>
-                        <b>Since 1992</b>
-                    </span>
-                </h2>
-                <p>Beautifully crafted ship models from the island of Mauritius.</p>
+         <h2 class="cd-headline clip is-full-width">
+          Bobato Ship Models           </h2>
+            <h2 style="color: white">        
+              <span class="cd-words-wrapper text-color" id="banner-typed-text"></span>
+            </h2>
+          <p class="mt-4">Beautifully crafted ship models from the island of Mauritius.</p>
       </div>
     </div>
   </div>
@@ -56,14 +54,14 @@
     <div class="shuffle-wrapper ships-list-gallery" id="ships-list-gallery-id">
       <%= @ships.find_each do |ship|  %>
         <%= link_to(ship_path(ship)) do %>
-          <div class="ships-images">
+          <div class="ships-images" data-aos="fade-up">
               <div class="position-relative inner-box">
                 <div class="image">
                    <img src=<%= ship.photo_url%> >
                     <div class="overlay-box">
                       <div class="overlay-inner">
-                        <h5 class="mb-0"><%= ship.category.name %></h5>
-                        <p><%= ship.name  %></p>
+                        <h5 class="mb-0" style="text-transform: capitalize;"><%= ship.category.name %></h5>
+                        <p style="text-transform: capitalize;"><%= ship.name  %></p>
                       </div>
                     </div> 
                 </div>
@@ -78,7 +76,7 @@
 <!-- Ships list End -->
 
 <!-- Service start -->
-<section class="section service-home border-top">
+<section class="service-home border-top">
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
@@ -135,3 +133,13 @@ Of Authenticity</h4>
   </div>
 </section>
 <!-- service end -->
+
+
+<section class="video-home border-top">
+  <div class="container">
+    <h2 class="mb-2" style="font-size: 32px;">A Film Showing The Quality & Craftsmanship Of Our Ship Models.</h2>
+    <div id="video-home" data-aos="fade-up">
+    <iframe width="672" height="378" src="https://www.youtube.com/embed/rsvCVUYhs0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>

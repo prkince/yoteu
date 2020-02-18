@@ -1,6 +1,6 @@
 // Specific CSS for your home-page
 .ships-list-gallery {
-	padding: 1rem;
+	padding: 1rem 0rem 1rem 0rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
@@ -11,4 +11,45 @@
 		border-radius: 5px;
 		box-shadow: 4px 4px 5px #818385;
 	}
+}
+
+// .banner {
+//   background-image: url('https://res.cloudinary.com/dovu27lye/image/upload/v1582038449/bobato/maquette2_e1eoso.jpg');
+//   background-size: cover;
+//   opacity: 0.9;
+// }
+
+
+.banner .cd-headline {
+  font-size: 56px;
+  line-height: 60px;
+  color: black;
+  opacity: 0.8
+}
+
+.banner-3 {
+  position: relative;
+}
+
+.section {
+  padding: 130px 0px;
+}
+
+.section-sm {
+  padding: 60px 0px;
+}
+
+#video-home {
+	display: flex;
+	justify-content: center;
+	padding: 4rem
+}
+
+.service-home {
+  position: relative;
+  padding: 100px 0px
+}
+
+.video-home {
+  padding: 100px 0px	
 }

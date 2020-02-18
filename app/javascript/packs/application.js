@@ -8,7 +8,8 @@ import "bootstrap";
 //= require jquery
 //= require jquery_ujs
 
-
+import { loadDynamicBannerText } from '../components/banner';
+loadDynamicBannerText();
 
 
 (function ($) {

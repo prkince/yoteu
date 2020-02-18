@@ -71,13 +71,6 @@ h6, .h6 {
   font-size: 14px;
 }
 
-.section {
-  padding: 140px 0px;
-}
-
-.section-sm {
-  padding: 60px 0px;
-}
 
 .btn {
   padding: 18px 38px;
@@ -154,7 +147,6 @@ a:hover {
 .text-color {
   color: #033461;
   opacity: 0.8;
-  font-size: 35px
 }
 
 .page-title h1 {
@@ -189,22 +181,6 @@ a:hover {
 
 .cd-headline.clip span {
   padding: 0px;
-}
-
-.banner {
-  background-image: url('https://res.cloudinary.com/dovu27lye/image/upload/v1582038449/bobato/maquette2_e1eoso.jpg');
-  background-size: cover;
-  opacity: 0.9;
-}
-.banner .cd-headline {
-  font-size: 56px;
-  line-height: 60px;
-  color: white;
-  opacity: 0.8
-}
-
-.banner-3 {
-  position: relative;
 }
 
 .main-nav .header-top-socials a {
@@ -463,9 +439,11 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
 .inner-box .image .overlay-box .overlay-inner {
   position: absolute;
   left: 0px;
-  bottom: 30px;
+  bottom: 20px;
   z-index: 1;
   padding: 10px 40px;
+  width: 80%;
+  height: 33%;
   p, h5 {
   	color: white;
     background: black;
@@ -525,10 +503,6 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
 
 .info a {
   margin-right: 10px;
-}
-
-.service-home {
-  position: relative;
 }
 
 .service-item i {
