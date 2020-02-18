@@ -1,17 +1,22 @@
 #container-show {
-	height: 100vh
+	height: 70vh
 }
 
 .container-details {
 	padding: 2rem 1rem 1rem 1rem;
-	margin: 3rem 4rem 1rem 4rem;
+	margin: 1rem 4rem 1rem 4rem;
+	display: flex;
 	img {
 		border-radius: 9px;
 	}
 	.details {
-		display: flex;
+		display: grid;
     	flex-direction: column;
-    	flex-flow: wrap;
     	padding: 1rem 1rem 1rem 1rem;
 	}
+}
+
+.show-details {
+	padding: 2rem 1rem 1rem 1rem;
+	margin: 3rem 4rem 7rem 4rem;
 }
