@@ -1,0 +1,18 @@
+.footer {
+  padding: 10px 0px;
+  background: #D7D8D8;
+  opacity: 0.2;
+  a:hover {
+    color: black;
+  }
+    position:fixed;
+  bottom:0;
+  left:0;
+  width: 100%;
+  z-index: 1001;
+}
+
+.footer-widget a {
+  color: #033461;
+  text-transform: capitalize;
+}

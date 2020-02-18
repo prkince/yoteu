@@ -13,15 +13,6 @@
 @import "pages/index";
 
 
-/*!------------------------------------------------------------------
-[MAIN STYLESHEET]
-
-PROJECT:	Thomson
-VERSION:	1.0
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[TABLE OF CONTENTS]
--------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Lato:400,600,700|Work+Sans:400,700,800");
 html {
   overflow-x: hidden;
@@ -81,7 +72,7 @@ h6, .h6 {
 }
 
 .section {
-  padding: 120px 0px;
+  padding: 140px 0px;
 }
 
 .section-sm {
@@ -162,6 +153,8 @@ a:hover {
 
 .text-color {
   color: #033461;
+  opacity: 0.8;
+  font-size: 35px
 }
 
 .page-title h1 {
@@ -198,9 +191,16 @@ a:hover {
   padding: 0px;
 }
 
+.banner {
+  background-image: url('maquette2.jpg');
+  background-size: cover;
+  opacity: 0.9;
+}
 .banner .cd-headline {
   font-size: 56px;
-  line-height: 70px;
+  line-height: 60px;
+  color: white;
+  opacity: 0.8
 }
 
 .banner-3 {
@@ -362,31 +362,32 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
   }
 }
 
-.portfolio {
+.ships_list {
   padding-bottom: 100px;
+  padding-top: 10px;
 }
 
-.portfolio .btn:focus, .portfolio .btn:hover, .portfolio .btn.focus.active {
+.ships_list .btn:focus, .ships_list .btn:hover, .ships_list .btn.focus.active {
   box-shadow: none !important;
   outline: 0 !important;
 }
 
-.portfolio .btn-group .btn {
+.ships_list .btn-group .btn {
   border-radius: 0px !important;
   padding-left: 0px;
   font-weight: 700;
 }
 
-.portfolio .btn-group .btn:hover {
+.ships_list .btn-group .btn:hover {
   color: #033461;
 }
 
-.portfolio .btn-group:not(:first-child) > .btn, .portfolio .btn-group > .btn:not(:first-child) {
+.ships_list .btn-group:not(:first-child) > .btn, .ships_list .btn-group > .btn:not(:first-child) {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
-.portfolio .btn.active {
+.ships_list .btn.active {
   color: #033461;
 }
 
@@ -507,7 +508,7 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
   transition: all 0.5s;
 }
 
-.portfolio-image {
+.ships_list-image {
   width: 60px;
   height: 60px;
   display: inline-block;
@@ -816,19 +817,3 @@ textarea.form-control {
     margin-bottom: 10px;
   }
 }
-
-.footer {
-  padding: 60px 0px;
-  background: #000;
-}
-
-.footer-widget a {
-  color: rgba(255, 255, 255, 0.5);
-  text-transform: capitalize;
-}
-
-.footer-widget a:hover {
-  color: #033461;
-}
-
-/*# sourceMappingURL=maps/style.css.map */
