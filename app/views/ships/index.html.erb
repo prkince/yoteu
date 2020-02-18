@@ -21,127 +21,59 @@
 <!-- Ships list start -->
 <section class="ships_list">
   <div class="container">
+
     <div class="row mb-5">
-          <div class="col-10">
-            <div class="btn-group btn-group-toggle " data-toggle="buttons">
-              <label class="btn active ">
+        <div class="col-10">
+          <div class="btn-group btn-group-toggle " data-toggle="buttons">
+            <label class="btn active ">
+              <a href="#ships-list-gallery-id">
                 <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Ships
-              </label>
-              <label class="btn">
+              </a>
+            </label>
+            <label class="btn">
+              <a href="#ships-list-gallery-id">
                 <input type="radio" name="shuffle-filter" value="explorers" />Explorers
-              </label>
-              <label class="btn">
+              </a>
+            </label>
+            <label class="btn">
+              <a href="#ships-list-gallery-id">
                 <input type="radio" name="shuffle-filter" value="historicals" />Historicals
-              </label>
-              <label class="btn">
+              </a>
+            </label>
+            <label class="btn">
+              <a href="#ships-list-gallery-id">
                 <input type="radio" name="shuffle-filter" value="warships" />Warships
-              </label>
-               <label class="btn">
+              </a>
+            </label>
+             <label class="btn">
+              <a href="#ships-list-gallery-id">
                 <input type="radio" name="shuffle-filter" value="miniatures" />Miniatures
-              </label>
-            </div>
+              </a>
+            </label>
           </div>
-      </div>  
-
-    <div class="row shuffle-wrapper portfolio-gallery">
-
-        <div class="col-lg-4 col-6 mb-4 shuffle-item"  data-groups="[&quot;explorers&quot;,&quot;historicals&quot;]">
-          <%= link_to(ship_path(29)) do %>
-            <div class="position-relative inner-box">
-              <div class="image position-relative ">
-                 <img src="https://shop.bobatoshipmodels.com/wp-content/uploads/2019/12/Endeavour-cook-10.jpg" alt="endeavour-image" class="img-fluid w-100 d-block">
-                  <div class="overlay-box">
-                    <div class="overlay-inner">
-                      <h5 class="mb-0">Explorers</h5>
-                      <p>HMS Endeavour Size 2</p>
-                    </div>
-                  </div> 
+        </div>
+    </div>  
+    <div class="shuffle-wrapper ships-list-gallery" id="ships-list-gallery-id">
+      <%= @ships.find_each do |ship|  %>
+        <%= link_to(ship_path(ship)) do %>
+          <div class="ships-images">
+              <div class="position-relative inner-box">
+                <div class="image">
+                   <img src=<%= ship.photo_url%> >
+                    <div class="overlay-box">
+                      <div class="overlay-inner">
+                        <h5 class="mb-0"><%= ship.category.name %></h5>
+                        <p><%= ship.name  %></p>
+                      </div>
+                    </div> 
+                </div>
               </div>
-            </div>
-          <% end %>
-        </div>
-
-        <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;explorers&quot;]">
-          <%= link_to(ship_path(39)) do %>
-            <div class="position-relative inner-box" >
-                <div class="image position-relative ">
-                   <img src="https://shop.bobatoshipmodels.com/wp-content/uploads/2019/12/Astrolabe-painted-14.jpg" alt="wasa-size-4-image" class="img-fluid w-100 d-block">
-                    <div class="overlay-box">
-                      <div class="overlay-inner">
-                        <h5 class="mb-0">Explorers</h5>
-                        <p>Astrolobe Size 1</p>
-                      </div> 
-                  </div>
-              </div>
-            </div>
-          <% end %>
-        </div>
-
-        <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;historicals&quot;]">
-          <%= link_to(ship_path(31)) do %>
-            <div class="position-relative inner-box">
-                <div class="image position-relative ">
-                   <img src="https://shop.bobatoshipmodels.com/wp-content/uploads/2019/11/Albatros-74-x-22-x-57-cm-1-1.jpg" alt="albatros-image" class="img-fluid w-100 d-block">
-                    <div class="overlay-box">
-                      <div class="overlay-inner">
-                        <h5 class="mb-0">Historicals</h5>
-                        <p>Albatros</p>
-                      </div>
-                    </div> 
-                </div>
-            </div>
-          <% end %>
-        </div>
-
-        <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;historicals&quot;]">
-          <%= link_to(ship_path(32)) do %>
-            <div class="position-relative inner-box">
-                <div class="image position-relative ">
-                   <img src="https://shop.bobatoshipmodels.com/wp-content/uploads/2020/01/TITANIC-TIT144-1MT50CM2.jpg" alt="titanic-image" class="img-fluid w-100 d-block">
-                    <div class="overlay-box">
-                      <div class="overlay-inner">
-                        <h5 class="mb-0">Historicals</h5>
-                        <p>Titanic Size 3</p>
-                      </div>
-                    </div> 
-                </div>
-            </div>
-          <% end %>
-        </div>
-
-        <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;warships&quot;]">
-          <%= link_to(ship_path(34)) do %>
-            <div class="position-relative inner-box">
-                <div class="image position-relative ">
-                   <img src="https://shop.bobatoshipmodels.com/wp-content/uploads/2020/01/Black-pearl-6.jpg" alt="ship-lists-image" class="img-fluid w-100 d-block">
-                    <div class="overlay-box">
-                      <div class="overlay-inner">
-                        <h5 class="mb-0 ">Warships</h5>
-                        <p>Black Pearl</p>
-                      </div>
-                    </div> 
-                </div>
-            </div>
-          <% end %>
-        </div>
-
-        <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;warships&quot;,&quot;historicals&quot;]">
-          <%= link_to(ship_path(36)) do %>
-            <div class="position-relative inner-box">
-                <div class="image position-relative ">
-                   <img src="https://shop.bobatoshipmodels.com/wp-content/uploads/2020/01/canot-Imperial-82-x-17-x-41-cm-18-1.jpg" alt="canot-imperial-image" class="img-fluid w-100 d-block">
-                    <div class="overlay-box">
-                      <div class="overlay-inner">
-                        <h5 class="mb-0">Warships</h5>
-                        <p>Canot Imperial</p>
-                      </div>
-                    </div> 
-                </div>
-            </div>
-          <% end %>
-        </div>
-      </div>
+          </div>
+        <% end %>  
+      <% end  %>
+    </div>
   </div>
+
 </section>
 <!-- Ships list End -->
 
