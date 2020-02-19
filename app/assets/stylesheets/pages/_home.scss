@@ -21,7 +21,8 @@
 }
 
 .section {
-  padding: 130px 0px;
+  padding: 130px 0px 0px 0px;
+  // padding: 130px 0px; original
 }
 
 .section-sm {
@@ -31,7 +32,8 @@
 #video-home {
 	display: flex;
 	justify-content: center;
-	padding: 4rem
+	padding: 0rem 4rem 8rem 4rem;
+  margin-top: -4rem;
 }
 
 .service-home {
@@ -39,6 +41,20 @@
   padding: 100px 0px
 }
 
-.video-home {
-  padding: 100px 0px	
+.padding-top-video {
+  height: 4rem;
+  background: white;
+  position: relative
+} 
+
+.video-section {
+  padding-top: 100px
+}
+
+.video-edou {
+  height: 150px; 
+  background-image: url(https://res.cloudinary.com/dovu27lye/image/upload/v1582038449/bobato/maquette2_e1eoso.jpg);
+  background-size: cover;
+  width: 280px;
+  margin-left: 60%;
 }

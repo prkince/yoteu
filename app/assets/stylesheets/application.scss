@@ -26,12 +26,12 @@ body {
   font-weight: 400;
   letter-spacing: 0.166667px;
   line-height: 1.7em;
-  color: #ffad5a;
+  color: #1a0841;
   background-color: white
 }
 
 p {
-  color: #ffad5a;
+  color: #1a0841;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -443,9 +443,9 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
   left: 0px;
   bottom: 20px;
   z-index: 1;
-  padding: 10px 40px;
-  width: 80%;
-  height: 33%;
+  padding: 10px 40px 10px 20px;
+  width: 100%;
+  height: 40%;
   p, h5 {
   	color: white;
     opacity: 0.8;
@@ -453,10 +453,10 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
     padding: 0px 8px 0px 8px;
   }
   h5 {
-    background: #4f9da6
+    background: #ff5959
   }
   p {
-    background: #ffad5a
+    background: #1a0841
   }
 }
 
@@ -478,7 +478,7 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
   transform: translateX(-150px);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background: #ffad5a;
+  background: #ff5959;
 }
 
 .overlay-content p {

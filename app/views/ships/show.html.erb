@@ -38,9 +38,12 @@
         <button type="button" class="btn btn-outline-prk">Add to basket</button>
       </div>
   </div>
+  <div style="font-size: 22px; text-transform: uppercase; padding: 2rem 0rem 0rem 5rem;">
+    <a href="#description-id" class="tab-underlined active" data-target="Fiche">DESCRIPTION</a>
+  </div>
 </div>
 
-<div class="border-top show-details">
+<div class="border-top show-details" id="description-id">
   <p style="text-align: justify;"><%= @ship.description %></p>
   <p style="text-align: justify;"><%= @ship.detail %></p>
 </div>
