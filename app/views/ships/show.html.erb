@@ -30,10 +30,12 @@
         <h1><%= @ship.name %></h1>
         <p><%= @ship.dimension %></p>
         <p style="text-align: justify;"><%= @ship.description %></p>
-        <div class="payment-btn">
-          <p>Price: €250</p>
-          <button type="button" class="btn btn-outline-light"><i class="fas fa-shopping-cart" style="color: black; cursor: pointer;"></i></button>
+        <div class="payment-details">
+          <p> Available quantities: <%= @ship.quantity %> pieces</p>
+          <p> Price: <%= @ship.price  %>€</p>
+          <p> Quantity: <input type="number" name="quantity" value="1"></p>
         </div>
+        <button type="button" class="btn btn-outline-prk">Add to basket</button>
       </div>
   </div>
 </div>

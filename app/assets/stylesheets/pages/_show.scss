@@ -6,9 +6,6 @@
 	padding: 2rem 1rem 1rem 1rem;
 	margin: 1rem 4rem 1rem 4rem;
 	display: flex;
-	img {
-		border-radius: 9px;
-	}
 	.details {
 		display: grid;
     	flex-direction: column;
@@ -21,11 +18,22 @@
 	margin: 3rem 4rem 7rem 4rem;
 }
 
-.payment-btn {
-	display: flow-root;
-	.btn-outline-light {
-		border-radius: 5px;
-		background: #818385;
-		opacity: 0.3
+.payment-details {
+	input {
+		width: 35px;
+		height: 23px;
+		border: #FEE0C2 solid 1px;
+		color: #FEAD5A
 	}
+}
+
+.btn-outline-prk {
+	background-color: #FEAD5A;
+	width: 80%;
+	color: #4F9DA6;
+
+}
+.btn-outline-prk:hover {
+	background-color: #ff5959;
+	color: #1a0841;
 }
