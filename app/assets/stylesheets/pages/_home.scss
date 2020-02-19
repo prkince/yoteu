@@ -55,6 +55,7 @@
   height: 150px; 
   background-image: url(https://res.cloudinary.com/dovu27lye/image/upload/v1582038449/bobato/maquette2_e1eoso.jpg);
   background-size: cover;
-  width: 280px;
-  margin-left: 60%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: -30px;
 }
