@@ -9,6 +9,18 @@
 	}
 }
 
+@media (max-width: 1000px) {
+    .ships-list-gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+@media (max-width: 850px) {
+    .ships-list-gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+
 .banner .cd-headline {
   font-size: 56px;
   line-height: 60px;
