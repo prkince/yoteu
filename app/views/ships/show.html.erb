@@ -30,7 +30,10 @@
         <h1><%= @ship.name %></h1>
         <p><%= @ship.dimension %></p>
         <p style="text-align: justify;"><%= @ship.description %></p>
-        <p>Price: €250</p>
+        <div class="payment-btn">
+          <p>Price: €250</p>
+          <button type="button" class="btn btn-outline-light"><i class="fas fa-shopping-cart" style="color: black; cursor: pointer;"></i></button>
+        </div>
       </div>
   </div>
 </div>
