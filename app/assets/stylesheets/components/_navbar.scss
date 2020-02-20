@@ -2,10 +2,28 @@
 	width: 60px
 }
 
-.navbar {
+#navbar {
 	padding: 0
 }
 
 .fa-shopping-cart:hover {
 	color: #ff5959
+}
+
+@media (max-width: 992px) {
+	#collapse {
+		background-color: salmon
+	}
+	#navbar {
+		padding: 1rem 2rem 1rem 2rem;
+		.navbar-toggler {
+			color: #4f9da6
+		}
+		.navbar-nav {
+			align-items: flex-end;
+			.nav-link {
+				padding: 0!important
+			}
+		}
+	}
 }

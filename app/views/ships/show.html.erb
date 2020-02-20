@@ -29,7 +29,7 @@
       <div class="col-sm-12 col-md-6 details">
         <h1><%= @ship.name %></h1>
         <p><%= @ship.dimension %></p>
-        <p style="text-align: justify;"><%= @ship.description %></p>
+        <p><%= @ship.description %></p>
         <div class="payment-details">
           <p> Available quantities: <%= @ship.quantity %> pieces</p>
           <p> Price: <%= @ship.price  %>€</p>
@@ -38,12 +38,12 @@
         <button type="button" class="btn btn-outline-prk">Add to basket</button>
       </div>
   </div>
-  <div style="font-size: 22px; text-transform: uppercase; padding: 2rem 0rem 0rem 5rem;">
+  <div id="description-show">
     <a href="#description-id" class="tab-underlined active" data-target="Fiche">DESCRIPTION</a>
+  </div>
+  <div class="border-top show-details" id="description-id">
+    <p><%= @ship.description %></p>
+    <p><%= @ship.detail %></p>
   </div>
 </div>
 
-<div class="border-top show-details" id="description-id">
-  <p style="text-align: justify;"><%= @ship.description %></p>
-  <p style="text-align: justify;"><%= @ship.detail %></p>
-</div>

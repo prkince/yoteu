@@ -70,3 +70,16 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+@media (max-width: 767px) {
+  .btn-group, .btn-group-toggle {
+    display: flex!important;
+    flex-wrap: wrap;
+    .btn-group > .btn {
+      padding: 8px
+    }
+  }
+
+}
+
+
