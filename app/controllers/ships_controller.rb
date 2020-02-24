@@ -11,15 +11,18 @@ class ShipsController < ApplicationController
 
 	def new           # GET /ships/new
 		@ship = Ship.new
+		@categories = Category.all
 	end
 
 	def create        # POST /ships
 		@ship = Ship.new(ship_params)
-		@ship.save     	
-		if @ship.save 
+		@categories = Category.all
+		@ship.category_id = @categories.first.id
+		if @ship.save
 			redirect_to ship_path(@ship)
 		else
-			render 'new'
+			flash[:notice] = "Check the details!"
+			render :new
 		end 
 	end
 
