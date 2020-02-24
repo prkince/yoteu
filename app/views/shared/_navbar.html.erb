@@ -33,7 +33,12 @@
             <ul class="dropdown-menu" aria-labelledby="dropdown05">
               <li><a class="dropdown-item" href="">My Account</a></li>
               <li><a class="dropdown-item" href="">Cart</a></li>
-              <li><a class="dropdown-item" href="/users/sign_in">Admin</a></li>
+              <% if user_signed_in? %>
+                <li> <%= link_to "Add a Ship", new_ship_path, class: "dropdown-item" %></li>
+                <li> <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %></li>
+              <% else %>
+                <li> <%= link_to "Log in", user_session_path, class: "dropdown-item" %></li>
+              <% end %>
             </ul>
           </li>
         </ul>
