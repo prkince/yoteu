@@ -1,0 +1,7 @@
+<%= render 'form', ship: @ship %>
+
+<%= link_to "Delete Ship", ship_path(@ship),
+      method: :delete,
+      data: { confirm: "Are you sure?" },
+      class: "btn btn-primary"
+       %>
