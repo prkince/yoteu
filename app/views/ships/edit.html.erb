@@ -1,0 +1,12 @@
+
+<div id='edit-form'>
+		<h1 style="text-align: center">Edit Your ship</h1>
+	<div id='form-ship'>
+		<%= render 'form', ship: @ship %>
+	</div>
+	<%= link_to "Delete Ship", ship_path(@ship),
+	  method: :delete,
+	  data: { confirm: "Are you sure you want to delete this ship?" },
+	  class: "btn btn-primary btn-form-edit"
+	   %>
+</div>

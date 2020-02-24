@@ -1,0 +1,23 @@
+#form-ship {
+	display: flex;
+    justify-content: center;
+	.btn-form {
+		justify-content: center;
+		display: flex;
+	}
+    form {
+    	width: 50%;
+    	.form-group label {
+    		justify-content: center;
+    		display: flex;
+    	}
+    }
+}
+#edit-form {
+	display: flex;
+	    flex-direction: column;
+	a {
+		margin: 2rem 35rem 6rem 35rem
+		}
+
+}	
