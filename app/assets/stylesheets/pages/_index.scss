@@ -1,3 +1,37 @@
-// Import page-specific CSS files here.
-@import "home";
-@import "show";
+.section-react {
+  padding: 130px 0px 0px 0px;
+  background: white;
+  height: 54vh
+}
+
+.video-react {
+      // background-image: url(https://res.cloudinary.com/dovu27lye/image/upload/v1582038449/bobato/maquette2_e1eoso.jpg);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+
+    video {
+    width: 100vw; /* Could also use width: 100%; */
+    height: 100vh;
+    object-fit: cover;
+    position: fixed; /* Change position to absolute if you don't want it to take up the whole page */
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+}
+
+.blank-react {
+  height: 50vh;
+  background: white;
+} 
+
+.vierge-react {
+  height: 17vh;
+} 
+
+
+.blank-react-2 {
+  height: 2000px;
+  background: white;
+} 

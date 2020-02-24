@@ -18,6 +18,9 @@ gem 'webpacker'
 gem 'jquery-rails'
 gem 'cloudinary', '~> 1.12.0'
 
+# test React 
+gem 'react-rails' # https://github.com/reactjs/react-rails
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end
