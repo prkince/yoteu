@@ -1,4 +1,16 @@
 <%= form_for(@ship) do |f| %>
+  
+  <% if current_page?(new_ship_path) %>
+    <div class="ship-category">
+      <%= f.label :category %>
+    </div>
+    <div id="form-categories">
+      <div class="check-boxes">
+        <%= f.collection_check_boxes :category, @categories, :id, :name, class: 'form-control' %>
+      </div>
+    </div>
+  <% end %>
+
 
   <div class="form-group">
     <%= f.label :name %>

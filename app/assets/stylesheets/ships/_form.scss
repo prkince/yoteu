@@ -1,6 +1,7 @@
 #form-ship {
 	display: flex;
     justify-content: center;
+    margin-bottom: 7rem;
 	.btn-form {
 		justify-content: center;
 		display: flex;
@@ -11,13 +12,30 @@
     		justify-content: center;
     		display: flex;
     	}
+    	.ship-category {
+			text-align: center
+    	}
     }
 }
 #edit-form {
 	display: flex;
-	    flex-direction: column;
-	a {
-		margin: 2rem 35rem 6rem 35rem
-		}
-
+	flex-direction: column;
+	.btn-form-edit {
+		margin: -4rem 21rem 8rem 21rem;
+	}
 }	
+
+
+#form-categories {
+	display: flex;
+	justify-content: center;
+
+	.check-boxes label {
+		padding: 10px
+	}
+}
+
+.title-new{
+	text-align: center ;
+	margin: 4rem 2rem 4rem 2rem
+}

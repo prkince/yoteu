@@ -17,7 +17,15 @@ class ShipsController < ApplicationController
 	def create        # POST /ships
 		@ship = Ship.new(ship_params)
 		@categories = Category.all
-		@ship.category_id = @categories.first.id
+		
+		@ship.category_id = 0
+		number = params[:ship][:category][1]
+		@categories.each do |category|
+			if category[:id] == number.to_i
+				@ship.category_id = number.to_i
+			end
+		end 
+
 		if @ship.save
 			redirect_to ship_path(@ship)
 		else

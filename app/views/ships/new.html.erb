@@ -1,9 +1,4 @@
-<h1 style="text-align: center">Enter details for your new Ship</h1>
-	Categories of boats (please select one)
-	<br>
-	<%= @categories.find_each do |category| %>
-	  Id: <%= category.id  %>. Name: <%= category.name  %> // 
-	<% end %>
+<h1 class='title-new'>Enter details for your new Ship</h1>
 <div id='form-ship'>
 	<%= render 'form', ship: @ship %>
 </div>
