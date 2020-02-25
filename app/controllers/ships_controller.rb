@@ -1,6 +1,7 @@
 class ShipsController < ApplicationController
 	skip_before_action :authenticate_user!, :only => [:index, :show]
   	before_action :set_ship, only: [:show, :edit, :update, :destroy]
+  	before_action :all_categories, only: [:new, :create]
 
 	def index
 	  @ships = Ship.all
@@ -11,13 +12,10 @@ class ShipsController < ApplicationController
 
 	def new           # GET /ships/new
 		@ship = Ship.new
-		@categories = Category.all
 	end
 
 	def create        # POST /ships
-		@ship = Ship.new(ship_params)
-		@categories = Category.all
-		
+		@ship = Ship.new(ship_params)	
 		@ship.category_id = 0
 		number = params[:ship][:category][1]
 		@categories.each do |category|
@@ -48,6 +46,10 @@ class ShipsController < ApplicationController
 	end
 
 	private
+
+	def  all_categories
+		@categories = Category.all
+	end 
 
 	def set_ship
 		@ship = Ship.find(params[:id])
