@@ -18,6 +18,8 @@ gem 'webpacker'
 gem 'jquery-rails'
 gem 'cloudinary', '~> 1.12.0'
 gem 'money-rails'
+gem 'stripe'
+gem 'stripe_event'
 
 # test React 
 gem 'react-rails' # https://github.com/reactjs/react-rails
