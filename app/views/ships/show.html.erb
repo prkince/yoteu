@@ -32,7 +32,7 @@
         <p><%= @ship.description %></p>
         <div class="payment-details">
           <p> Available quantities: <%= @ship.quantity %> pieces</p>
-          <p> Price: <%= @ship.price  %>€</p>
+          <p> Amount: <%= humanized_money_with_symbol(@ship.price) %></p>
           <p> Quantity: <input type="number" name="quantity" value="1"></p>
         </div>
         <button type="button" class="btn btn-outline-prk">Add to basket</button>
