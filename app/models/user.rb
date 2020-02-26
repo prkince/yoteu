@@ -5,4 +5,6 @@ class User < ApplicationRecord
     # *** REMETTRE :registerable dans le cas d'un nouveau sign_in ***
 
   devise :database_authenticatable, :recoverable, :rememberable, :validatable
+  has_many :orders
+
 end
