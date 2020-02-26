@@ -17,6 +17,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'jquery-rails'
 gem 'cloudinary', '~> 1.12.0'
+gem 'money-rails'
 
 # test React 
 gem 'react-rails' # https://github.com/reactjs/react-rails
