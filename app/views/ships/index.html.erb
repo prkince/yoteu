@@ -17,7 +17,7 @@
 <!-- Banner End -->
 <div class="video-edou">
    <video controls preload="true" autoplay loop muted>
-      <source src="https://res.cloudinary.com/dovu27lye/video/upload/v1582197557/bobato/video-edou_xvpo6x.mp4" type="video/mp4" > 
+      <source src="https://res.cloudinary.com/dovu27lye/video/upload/v1582737691/bobato/mauritius_cropped_khyedm.mp4" type="video/mp4" > 
    </video>
 </div>
 
@@ -62,7 +62,13 @@
           <div class="ships-images" data-aos="fade-up">
               <div class="position-relative inner-box">
                 <div class="image">
-                   <img src=<%= ship.photo_url%> >
+                    <% if @number == 1 %>
+                      <%= image_tag(ship.photo_url, width: '100%') %>
+                    <% elsif @number == 2 %>
+                      <%= image_tag(ship.photo_url_two, width: '100%') %>
+                    <% else %>
+                      <%= image_tag(ship.photo_url_three, width: '100%') %>
+                    <% end %>
                     <div class="overlay-box">
                       <div class="overlay-inner">
                         <h5 class="mb-0" style="text-transform: capitalize;"><%= ship.category.name %></h5>
@@ -75,6 +81,14 @@
         <% end %>  
       <% end  %>
     </div>
+
+    <a href="#service-home-id">
+      <div class="container-chevron">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+      </div>
+    </a>
   </div>
 
 </section>
@@ -84,7 +98,7 @@
 <section class="service-home border-top">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6" id="service-home-id">
         <h2 class="mb-2 ">What we offer</h2>
         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, totam ipsa quia hic odit a sit laboriosam voluptatem in, blanditiis.</p>
       </div>

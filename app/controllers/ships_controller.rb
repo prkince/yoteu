@@ -4,7 +4,8 @@ class ShipsController < ApplicationController
   	before_action :all_categories, only: [:new, :create]
 
 	def index
-	  @ships = Ship.all
+		@ships = Ship.all
+		@number = rand(1..3);
 	end
 
 	def show
