@@ -9,7 +9,6 @@ import "bootstrap";
 
 import { loadDynamicBannerText } from '../components/banner';
 import { loadAfterPageLoad } from '../components/load_after_page';
-
 loadAfterPageLoad();
 
 import { hideVideoOnScroll } from '../components/hide_video_on_scroll';
