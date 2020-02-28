@@ -9,6 +9,7 @@ class ShipsController < ApplicationController
 	end
 
 	def show
+		@category_ships = Ship.where(category: @ship.category)
 	end
 
 	def new           # GET /ships/new

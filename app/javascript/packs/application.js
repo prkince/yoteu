@@ -9,14 +9,25 @@ import "bootstrap";
 
 import { loadDynamicBannerText } from '../components/banner';
 import { loadAfterPageLoad } from '../components/load_after_page';
-loadAfterPageLoad();
 
 import { hideVideoOnScroll } from '../components/hide_video_on_scroll';
 hideVideoOnScroll();
 
+import { carouselInfinite } from '../components/carousel_infinite';
+
+if(document.getElementById("other-ships-id")){
+    carouselInfinite();
+}
+
 if(document.getElementById("banner-typed-text")){
     loadDynamicBannerText();
 }
+
+if(document.getElementById("video-home")){
+	loadAfterPageLoad();
+}
+
+
 
 // Support component names relative to this directory:
 var componentRequireContext = require.context("components", true);
