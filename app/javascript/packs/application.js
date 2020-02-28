@@ -8,6 +8,12 @@ import "bootstrap";
 //= require jquery_ujs
 
 import { loadDynamicBannerText } from '../components/banner';
+import { loadAfterPageLoad } from '../components/load_after_page';
+
+loadAfterPageLoad();
+
+import { hideVideoOnScroll } from '../components/hide_video_on_scroll';
+hideVideoOnScroll();
 
 if(document.getElementById("banner-typed-text")){
     loadDynamicBannerText();
