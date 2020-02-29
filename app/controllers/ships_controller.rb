@@ -5,7 +5,8 @@ class ShipsController < ApplicationController
 
 	def index
 		@ships = Ship.all
-		@number = rand(1..3);
+		@number = rand(1..3)
+		@category_ships = Category.all
 	end
 
 	def show
@@ -43,7 +44,7 @@ class ShipsController < ApplicationController
 	end
 
 	def destroy       # DELETE /ships/:id
-	    @ship.destroy
+	    @ship.destroyc
 	    redirect_to ships_path
 	end
 

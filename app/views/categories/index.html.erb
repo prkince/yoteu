@@ -1,0 +1,38 @@
+<div id="container-show">
+
+  <div id="category-show">
+    <a href="#categories-list-gallery-id" class="tab-underlined active" data-target="Fiche">ALL CATEGORIES</a>
+  </div>
+
+    <div class="border-top shuffle-wrapper ships-list-gallery" id="categories-list-gallery-id">
+
+      <%= @category_ships.find_each do |category|  %>
+        <%= link_to(category_path(category)) do %>
+          <div class="ships-images" data-aos="fade-up">
+              <div class="position-relative inner-box">
+                <div class="image">
+                    <% if category.name == 'explorer' %>
+                      <%= image_tag('https://shop.bobatoshipmodels.com/wp-content/uploads/2019/12/Astrolabe-painted-19-1.jpg', width: '100%') %>
+                    <% elsif category.name == 'historical' %>
+                      <%= image_tag('https://shop.bobatoshipmodels.com/wp-content/uploads/2020/01/TITANIC-TIT144-1MT50CM3.jpg', width: '100%') %>
+                    <% else %>
+                      <%= image_tag('https://shop.bobatoshipmodels.com/wp-content/uploads/2020/01/Black-pearl-2.jpg', width: '100%') %>
+                    <% end %>
+                    <div class="overlay-box">
+                      <div class="overlay-inner">
+                        <h5 class="mb-0" style="text-transform: capitalize;"><%= category.name.upcase %></h5>
+                      </div>
+                    </div> 
+                </div>
+              </div>
+          </div>
+        <% end %>  
+      <% end  %>
+    </div>
+  
+  <div id="btn-home">
+    <%= link_to "HOME", root_path, class: "btn btn-outline-prk" %>
+  </div>
+
+</div>
+

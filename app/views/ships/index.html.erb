@@ -3,8 +3,9 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10">
-         <h2 class="cd-headline clip is-full-width">
-          Bobato Ship Models           </h2>
+          <h2 class="cd-headline clip is-full-width">
+            Bobato Ship Models 
+          </h2>
             <h2 style="color: white">        
               <span class="cd-words-wrapper text-color" id="banner-typed-text"></span>
             </h2>
@@ -30,34 +31,21 @@
   <div class="container">
 
     <div class="mb-5">
-          <div class="btn-group btn-group-toggle " data-toggle="buttons">
-            <label class="btn active ">
-              <a href="#ships-list-gallery-id">
-                <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Ships
-              </a>
-            </label>
+          <div class="btn-group btn-group-toggle">
             <label class="btn">
-              <a href="#ships-list-gallery-id">
-                <input type="radio" name="shuffle-filter" value="explorers" />Explorers
-              </a>
+              <%= link_to('ALL CATEGORIES', categories_path) %>   
             </label>
-            <label class="btn">
-              <a href="#ships-list-gallery-id">
-                <input type="radio" name="shuffle-filter" value="historicals" />Historicals
-              </a>
-            </label>
-            <label class="btn">
-              <a href="#ships-list-gallery-id">
-                <input type="radio" name="shuffle-filter" value="warships" />Warships
-              </a>
-            </label>
-             <label class="btn">
-              <a href="#ships-list-gallery-id">
-                <input type="radio" name="shuffle-filter" value="miniatures" />Miniatures
-              </a>
-            </label>
+            
+            <%= @category_ships.find_each do |category|  %>
+              <label class="btn">
+                <%= link_to(category_path(category)) do %>                     
+                  <%= category.name.upcase %>
+                <% end %>
+              </label>
+            <% end %>
           </div>
     </div>  
+
     <div class="shuffle-wrapper ships-list-gallery" id="ships-list-gallery-id">
       <%= @ships.find_each do |ship|  %>
         <%= link_to(ship_path(ship)) do %>

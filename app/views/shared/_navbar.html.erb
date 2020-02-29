@@ -12,20 +12,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item  active"><%= link_to "Home", root_path, class: "nav-link" %></li>
 
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ship Models</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown02">
-              <li><a class="dropdown-item" href="">Explorer Ships</a></li>
-              <li><a class="dropdown-item" href="">Miniatures</a></li>
-              <li><a class="dropdown-item" href="">Cruise Ships</a></li>
-              <li><a class="dropdown-item" href="">Fishing Boats</a></li>
-              <li><a class="dropdown-item" href="">Historical</a></li>
-              <li><a class="dropdown-item" href="">Racing Yachts</a></li>
-              <li><a class="dropdown-item" href="">School Ships</a></li>
-              <li><a class="dropdown-item" href="">Merchant Ships</a></li>
-              <li><a class="dropdown-item" href="">Warships</a></li>
-            </ul>
-          </li>
+          <li class="nav-item dropdown active"><%= link_to "Categories", categories_path, class: "nav-link" %></li>
            <li class="nav-item"><a class="nav-link" href="">About</a></li>
            <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
            <li class="nav-item dropdown">

@@ -1,0 +1,42 @@
+
+<div id="container-show">
+
+	<div id="category-show">
+		<a href="#category-id" class="tab-underlined active" data-target="Fiche"><%= @category.name.upcase %> SHIPS</a>
+	</div>
+
+	<div class="border-top show-details flipster" id="other-ships-id">
+		<h4 style="text-align: center; margin: 2rem"><%= @category.description %></h4>
+	    <ul class="flip-items">
+	      <%= @category.ships.find_each do |ship, i|  %>
+	        <%= link_to(ship_path(ship)) do %>
+	          <li id=<%= i %>>
+	            <div class="ships-images" data-aos="fade-up">
+	              <div class="position-relative inner-box-inf">
+	                <div class="image">
+	                    <% if @number == 1 %>
+	                      <%= image_tag(ship.photo_url) %>
+	                    <% elsif @number == 2 %>
+	                      <%= image_tag(ship.photo_url_two) %>
+	                    <% else %>
+	                      <%= image_tag(ship.photo_url_three) %>
+	                    <% end %>
+	                    <div class="overlay-box">
+	                      <div class="overlay-inner">
+	                        <h5 class="mb-0" style="text-transform: capitalize;"><%= ship.category.name %></h5>
+	                        <p style="text-transform: capitalize;"><%= ship.name  %></p>
+	                      </div>
+	                    </div> 
+	                </div>
+	              </div>
+	            </div>
+	          </li>
+	        <% end %>  
+	      <% end  %>
+	    </ul>
+	</div>
+	
+	<div id="btn-home">
+		<%= link_to "HOME", root_path, class: "btn btn-outline-prk" %>
+	</div>
+</div>
