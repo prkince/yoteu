@@ -4,3 +4,13 @@
 	justify-content: center;
 	margin: 3rem
 }
+
+@media (max-width: 400px) {
+	#category-show a {
+		font-size: 25px;
+		display: flex;
+		justify-content: center;
+		margin: 3rem
+	}
+
+}
