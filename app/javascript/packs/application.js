@@ -13,6 +13,9 @@ import { loadAfterPageLoad } from '../components/load_after_page';
 import { hideVideoOnScroll } from '../components/hide_video_on_scroll';
 hideVideoOnScroll();
 
+import { scrollAnimation } from '../components/scroll_animation';
+scrollAnimation();
+
 import { carouselInfinite } from '../components/carousel_infinite';
 
 if(document.getElementById("other-ships-id")){

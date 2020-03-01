@@ -48,7 +48,7 @@
 
     <div class="shuffle-wrapper ships-list-gallery" id="ships-list-gallery-id">
       <%= @ships.find_each do |ship|  %>
-        <%= link_to(ship_path(ship)) do %>
+        <%= link_to(ship_path(ship), class: 'ola' ) do %>
           <div class="ships-images" data-aos="fade-up">
               <div class="position-relative inner-box">
                 <div class="image">
@@ -72,13 +72,10 @@
       <% end  %>
     </div>
 
-    <a href="#service-home-id">
-      <div class="container-chevron">
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-      </div>
-    </a>
+    <div class="controls">
+        <i class="fas fa-sync" id="showMore"></i>
+<!--         <a href="#" id="showLess">Show less</a>
+ --></div>
   </div>
 
 </section>
@@ -142,6 +139,13 @@
 </section>
 <!-- service end -->
 
+    <a href="#video-home">
+      <div class="container-chevron">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+      </div>
+    </a>
 
 <section class="video-section border-top">
   <div class="container">
