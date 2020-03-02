@@ -1,7 +1,10 @@
 class ShipsController < ApplicationController
-	skip_before_action :authenticate_user!, :only => [:index, :show]
+	skip_before_action :authenticate_user!, :only => [:index, :show, :about]
   	before_action :set_ship, only: [:show, :edit, :update, :destroy]
   	before_action :all_categories, only: [:new, :create]
+
+	def about
+	end 
 
 	def index
 		@ships = Ship.all
@@ -44,7 +47,7 @@ class ShipsController < ApplicationController
 	end
 
 	def destroy       # DELETE /ships/:id
-	    @ship.destroyc
+	    @ship.destroy
 	    redirect_to ships_path
 	end
 
