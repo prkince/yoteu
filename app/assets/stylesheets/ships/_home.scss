@@ -44,7 +44,8 @@
 #video-home {
 	display: flex;
 	justify-content: center;
-	padding: 0rem 4rem 8rem 4rem;
+  flex-flow: column;
+  margin: 6rem 0rem 6rem 0rem 
 }
 
 .service-home {
@@ -147,6 +148,19 @@
     .section {
     padding: 130px 0px 0px 0px;
   // padding: 130px 0px; original
+  }
+
+  #video-home {
+    background-image: url(https://res.cloudinary.com/dovu27lye/image/upload/v1583167765/bobato/boat_model_pmxesu.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    margin-bottom: 20vh;
+    margin-top: 2vh;
+    height: 18vh;
+    width: 100%;
+    video {
+      display: none;
+    }      
   }
 }
 
