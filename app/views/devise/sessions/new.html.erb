@@ -1,7 +1,10 @@
 <div class='devise-container'>
 
-  <h2>Log in</h2>
-
+  <% if current_page?(admin_session_url) %>
+    <h2> Admin Log in</h2>
+  <% else %>
+    <h2> User Log in</h2>
+  <% end %>
   <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="form-inputs">
       <%= f.input :email,

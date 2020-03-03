@@ -1,5 +1,7 @@
 class ShipsController < ApplicationController
-	skip_before_action :authenticate_user!, :only => [:index, :show, :about]
+	skip_before_action :authenticate_user!
+	before_action :authenticate_admin!, :only => [:edit, :new, :create, :update, :destroy]
+
   	before_action :set_ship, only: [:show, :edit, :update, :destroy]
   	before_action :all_categories, only: [:new, :create]
 
