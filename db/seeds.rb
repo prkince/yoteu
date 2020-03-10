@@ -14,6 +14,7 @@ puts 'Creating categories...'
 explorer = Category.create!(name: 'explorer', description: 'Ships who conquered the world')
 historical = Category.create!(name: 'historical', description: 'Ships eveyrone must remembered')
 warship = Category.create!(name: 'warship', description: 'Ships involded in battles')
+prk_ship = Category.create!(name: 'PrkShip', description: 'Ships you can rely on')
 
 puts 'Creating ships...'
 
@@ -130,5 +131,26 @@ Ship.create!(sku: 'black-pearl', name: 'Black Pearl',
 	photo_url_three: 'https://shop.bobatoshipmodels.com/wp-content/uploads/2020/01/Black-pearl-2.jpg', 
 	detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum vitae quaerat nihil nisi enim accusamus consequuntur, at voluptatem nostrum, delectus eveniet quae sit corporis aperiam! Quasi vel impedit beatae officiis.',
 	quantity: 9, price: 240)
+
+#Prk Ship
+#category_id: 15 <-- pour rajouter un bateau en console direct 
+
+Ship.create!(sku: 'explorer-ship', name: 'The Explorer', 
+	description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 
+	dimension: 'Model Dimensions: Length 210cm x Width 70cm x Height 153cm', category: prk_ship,
+	photo_url: 'https://res.cloudinary.com/dovu27lye/image/upload/v1583837409/bobato/boat_model_13_uklj0e.jpg', 
+	photo_url_two: 'https://res.cloudinary.com/dovu27lye/image/upload/v1583837409/bobato/boat_model_16_onvdgb.jpg', 
+	photo_url_three: 'https://res.cloudinary.com/dovu27lye/image/upload/v1583837406/bobato/boat_model_9_imfizw.jpg', 
+	detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum vitae quaerat nihil nisi enim accusamus consequuntur, at voluptatem nostrum, delectus eveniet quae sit corporis aperiam! Quasi vel impedit beatae officiis.',
+	quantity: 9, price: 1500)
+
+Ship.create!(sku: 'the-licorne', name: 'The Licorne', 
+	description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 
+	dimension: 'Model Dimensions: Length 210cm x Width 70cm x Height 153cm', category: prk_ship,
+	photo_url: 'https://res.cloudinary.com/dovu27lye/image/upload/v1583837403/bobato/boat_model_2_pmvdqp.jpg', 
+	photo_url_two: 'https://res.cloudinary.com/dovu27lye/image/upload/v1583837403/bobato/boat_model_3_mkygf7.jpg', 
+	photo_url_three: 'https://res.cloudinary.com/dovu27lye/image/upload/v1583167765/bobato/boat_model_pmxesu.jpg', 
+	detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum vitae quaerat nihil nisi enim accusamus consequuntur, at voluptatem nostrum, delectus eveniet quae sit corporis aperiam! Quasi vel impedit beatae officiis.',
+	quantity: 3, price: 9500)
 
 puts 'Finished!'
