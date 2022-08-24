@@ -7,7 +7,7 @@ class VideoHome extends React.Component {
       <React.Fragment>
 		<div className="video-react">
 			<video controls preload="true" autoPlay loop muted>
-				<source src="https://res.cloudinary.com/dovu27lye/video/upload/v1582197557/bobato/video-edou_xvpo6x.mp4" type="video/mp4" /> 
+				<source src="https://res.cloudinary.com/dovu27lye/video/upload/v1582197557/yoteu/video-edou_xvpo6x.mp4" type="video/mp4" /> 
 			</video>
 		</div>
       </React.Fragment>

@@ -1,1 +1,1 @@
-Idea of Bobato website 
+Idea of Yoteu website 
