@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
-ruby '2.6.3'
+ruby '2.7.6'
 
 gem 'bootsnap', require: false
 gem 'devise'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
-gem 'puma'
+gem 'puma', '~> 5.6.5'
 gem 'rails', '6.0.2.1'
 gem 'redis'
 
@@ -20,6 +20,8 @@ gem 'cloudinary', '~> 1.12.0'
 gem 'money-rails'
 gem 'stripe'
 gem 'stripe_event'
+
+gem 'mimemagic'
 
 # test React 
 gem 'react-rails' # https://github.com/reactjs/react-rails
